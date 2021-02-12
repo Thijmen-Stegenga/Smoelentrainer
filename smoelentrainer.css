@@ -1,0 +1,16 @@
+h1 {
+	text-align: center;
+}
+
+#button1{
+	width: 185px;
+	height: 70px;
+	color: red;
+	text-align: center;
+	margin-left: 45%;
+}
+
+#logo{
+	text-align: center;
+	margin-left: 600px;
+}
