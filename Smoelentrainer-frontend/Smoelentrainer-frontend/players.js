@@ -49,6 +49,7 @@ var selectedName;
 var checkimage;
 var checkName;
 var countimage = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var countname = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const player = document.querySelectorAll(".players");
 const namePlayer = document.querySelectorAll(".namePlayer");
 
@@ -103,6 +104,12 @@ for (var i=0; i<players.length; i++){
 	countimage.splice(countCheck, 1);
 
 	document.getElementById("img-"+i).src= players[random].img;
+}
+//Random names 
+for (var i=0; i<players.length; i++){
+	var random = countname[Math.floor(Math.random() * countname.length)];
+	var countCheck = countname.indexOf(random);
+	countname.splice(countCheck, 1);
 	document.getElementById("btn-"+i).innerHTML= players[random].name;
 }
 
@@ -172,7 +179,6 @@ function checkSecond(sec) {
   if (sec < 0) {sec = "59"};
   return sec;
 }
-
 
 var timeLeft = 90;
 var tryTime = localStorage.getItem('tryTime');
