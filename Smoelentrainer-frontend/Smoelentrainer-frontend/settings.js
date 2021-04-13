@@ -7,6 +7,6 @@ function submit(){
 	var time = formData.get("timer");
 	var players = formData.get("players");
 	localStorage.setItem('tryTime', time);	
-	localStorage.setItem('playersSet', players);
+	localStorage.setItem('playersT', players);
 	window.location.assign('smoelentrainer.html');
 }

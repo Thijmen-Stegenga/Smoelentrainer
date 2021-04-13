@@ -156,7 +156,7 @@ function checkMatch(){
 }
 
 document.getElementById('timer').innerHTML =
-  001 + ":" + 00;
+  "01:00";
 startTimer();
 
 function startTimer() {
@@ -186,5 +186,8 @@ var tryTime = localStorage.getItem('tryTime');
 if(tryTime != null){
 	timeLeft = tryTime
 }
+
+var playersSet = localStorage.getItem('playersT');
+let playerAmount = [];
 
 
